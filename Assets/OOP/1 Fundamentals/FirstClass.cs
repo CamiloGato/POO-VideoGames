@@ -1,18 +1,33 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class Player
+{
+    // Properties
+    private int health;
+    private int experience;
+    private int level;
+    private int speed;
+    
+    // Getters and Setters
+    public void SetHealth(int health)
+    {
+        this.health = health;
+    }
+    public int GetHealth()
+    {
+        //... some logic
+        return health;
+    }
+    
+}
+
 public class FirstClass : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Player player = new Player();
     }
 }
